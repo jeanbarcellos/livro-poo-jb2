@@ -37,3 +37,5 @@ Arquvio D:\Google Drive\www\livro-php-poo\livro-poo-jb2\cap2\erro_exception_.php
 Arquvio D:\Google Drive\www\livro-php-poo\livro-poo-jb2\cap2\erro_exception_.php : linha 10 # no. 0 : Arquivo não existente
 Arquvio D:\Google Drive\www\livro-php-poo\livro-poo-jb2\cap2\erro_exception_.php : linha 10 # no. 0 : Arquivo não existente
 Arquvio D:\Google Drive\www\livro-php-poo\livro-poo-jb2\cap2\erro_exception_.php : linha 10 # no. 0 : Arquivo não existente
+Arquivo D:\Google Drive\www\livro-php-poo\livro-poo-jb2\cap2\erro_trigger.php : linha 12 # no. 256 : Arquivo não existente tchê2
+Arquivo D:\Google Drive\www\livro-php-poo\livro-poo-jb2\cap2\erro_trigger.php : linha 12 # no. 256 : Arquivo não existente tchê2
