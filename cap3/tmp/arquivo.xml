@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<log>
+  <time>2015-10-15 15:12:20</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2015-10-15 15:12:20</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>
+<log>
+  <time>2015-10-15 15:13:44</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2015-10-15 15:13:44</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>
+<log>
+  <time>2015-12-14 22:38:25</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2015-12-14 22:38:25</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>
+<log>
+  <time>2015-12-14 22:39:04</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2015-12-14 22:39:05</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>
+<log>
+  <time>2015-12-14 22:39:09</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2015-12-14 22:39:09</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>
+<log>
+  <time>2015-12-14 22:39:12</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2015-12-14 22:39:12</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>
