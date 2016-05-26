@@ -26,14 +26,12 @@ class Pessoa
      */
     function __get($propriedade)
     {
-        if ($propriedade == 'cidade');
+        if ($propriedade == 'cidade')
         {
             return new Cidade($this->cidadeID);
         }
     }
 }
-
-
 
 /*
  * classe Cidade
@@ -86,10 +84,11 @@ class Cidade
 $maria = new Pessoa('Maria da Silva', 1);
 $pedro = new Pessoa('Perdo Cardoso', 2);
 
+
 // exibe o nome da cidade de cada Pessoa
 echo $maria->cidade->getNome() . "<br>\n";
 echo $pedro->cidade->getNome() . "<br>\n";
 
 // exibe o atributo cidade
-print_r($maria->cidade);
-?>
+var_dump($maria->cidade);
+

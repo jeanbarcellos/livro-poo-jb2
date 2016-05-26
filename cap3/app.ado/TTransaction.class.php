@@ -20,7 +20,7 @@ final class TTransaction
      * Abre uma transação e uma conexão ao BD
      * @param $database = nome do banco de dados
      */
-    public static function open($database)
+    public static function open($database = "my_livro")
     {
         // verifica se a variavel self::close() está vazia
         if (empty(self::$conn))
@@ -54,7 +54,7 @@ final class TTransaction
         if (self::$conn)
         {
             // desfaz as operações realizadas durante a transação e fecha
-            self::$conn->rollBack(); #P DO
+            self::$conn->rollBack(); # PDO
             self::$conn = NULL; # fecha a conexão
         }
     }

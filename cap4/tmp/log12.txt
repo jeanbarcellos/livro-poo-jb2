@@ -1,0 +1,24 @@
+2016-05-26 02:35:54 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-26 02:35:54 :: SELECT max(ID) as ID
+  FROM inscricao 
+
+2016-05-26 02:35:54 :: SELECT max(ID) as ID
+  FROM inscricao 
+
+2016-05-26 02:57:12 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-26 02:57:12 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Carlos Ranzi', 'Rua Francisco Oscar', '(51) 1234-5678', 'Lajeado', 50);
+2016-05-26 02:57:12 :: SELECT max(ID) as ID
+  FROM inscricao 
+
+2016-05-26 02:57:12 :: INSERT INTO inscricao (ref_aluno, ref_turma, id) 
+ VALUES (50, 1, 99);
+2016-05-26 02:57:12 :: SELECT max(ID) as ID
+  FROM inscricao 
+
+2016-05-26 02:57:12 :: INSERT INTO inscricao (ref_aluno, ref_turma, id) 
+ VALUES (50, 2, 100);

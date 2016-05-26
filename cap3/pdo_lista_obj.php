@@ -7,6 +7,7 @@ try {
 
     // executa uma instrução SQL de consulta
     $result = $conn->query("SELECT codigo, nome FROM famosos");
+    
     if ($result) {
         // percorre os resultados via fetch()
         while ($row = $result->fetch(PDO::FETCH_OBJ)) {

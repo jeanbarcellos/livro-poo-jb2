@@ -1,7 +1,9 @@
 <?php 
-/*
+/**
  * classe TCriteria
+ * 
  * Esta classe provê uma interface utilizada para definição de critérios
+ * 
  */
 class TCriteria extends TExpression
 {
@@ -18,11 +20,12 @@ class TCriteria extends TExpression
         $this->operators = array();
     }
     
-    /*
+    /**
      * método add()
      * adiciona uma expressão ao critério
      * @param $expression = expressão (Objeto TExpression)
      * @param $operator   = operador lógico de comparação
+     * 
      */ 
     public function add(TExpression $expression, $operator = self::AND_OPERATOR)
     {
@@ -74,16 +77,12 @@ class TCriteria extends TExpression
      * @param $property = propriedade
      * @param $value    = valor
     */
-    public function setProperty($property, $value)
-    {
-        $property = strtolower($property);
-        
-        if (isset($value))
-        {
+    public function setProperty($property, $value) {
+        $property = strtoupper($property);
+
+        if (isset($value)) {
             $this->properties[$property] = $value;
-        }
-        else
-        {
+        } else {
             $this->properties[$property] = NULL;
         }
     }
@@ -104,4 +103,3 @@ class TCriteria extends TExpression
      
 }
 
-?>

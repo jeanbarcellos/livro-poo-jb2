@@ -46,7 +46,7 @@ final class TSqlUpdate extends TSqlInstruction
     }
 
     
-    /*
+    /**
      * método getInstruction()
      * retorna a instrução de UPDATE em forma de string.
      */
@@ -81,4 +81,3 @@ final class TSqlUpdate extends TSqlInstruction
         return $this->sql;
     }
 }
-?>

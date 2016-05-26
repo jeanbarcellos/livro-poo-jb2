@@ -20,7 +20,7 @@ final class TTransaction
      * Abre uma transação e uma conexão ao BD
      * @param $database = nome do banco de dados
      */
-    public static function open($database)
+    public static function open($database = 'my_livro')
     {
         // verifica se a variavel self::close() está vazia
         if (empty(self::$conn))

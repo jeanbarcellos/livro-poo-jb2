@@ -54,3 +54,21 @@
   <message>INSERT INTO famosos (codigo, nome) 
  VALUES (10, 'Albert Einstein');</message>
 </log>
+<log>
+  <time>2016-05-21 00:36:29</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2016-05-21 00:36:29</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>
+<log>
+  <time>2016-05-21 00:36:48</time>
+  <message>Inserindo registro Albert Einstein</message>
+</log>
+<log>
+  <time>2016-05-21 00:36:48</time>
+  <message>INSERT INTO famosos (codigo, nome) 
+ VALUES (10, 'Albert Einstein');</message>
+</log>

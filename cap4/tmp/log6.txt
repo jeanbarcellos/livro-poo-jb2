@@ -1,0 +1,203 @@
+2016-05-21 02:32:00 :: SELECT *
+  FROM turma 
+ WHERE (turno = 'T' AND encerrada = FALSE) 
+
+2016-05-21 02:32:00 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-21 02:32:00 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-21 02:32:00 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-21 02:32:00 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-21 02:32:06 :: SELECT *
+  FROM turma 
+ WHERE (turno = 'T' AND encerrada = FALSE) 
+
+2016-05-21 02:32:06 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-21 02:32:06 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-21 02:32:06 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-21 02:32:06 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-21 02:34:52 :: SELECT *
+  FROM turma 
+ WHERE (turno = 'T' AND encerrada = FALSE) 
+
+2016-05-21 02:34:52 :: SELECT *
+  FROM inscricao 
+ WHERE (turno = 'T' AND encerrada = FALSE) 
+
+2016-05-21 02:35:21 :: SELECT *
+  FROM turma 
+ WHERE (turno = 'T' AND encerrada = FALSE) 
+
+2016-05-21 02:35:21 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-21 02:35:21 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-21 02:35:21 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-21 02:35:21 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM turma 
+ WHERE (turno = 'T' AND encerrada = FALSE) 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM turma 
+ WHERE (turno = 'T' AND encerrada = FALSE) 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-21 02:35:22 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM turma 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM turma 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-21 02:35:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-23 01:07:59 :: SELECT *
+  FROM turma 
+
+2016-05-23 01:07:59 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-23 01:07:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-23 01:07:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-23 01:07:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-23 01:23:40 :: SELECT *
+  FROM turma 
+
+2016-05-23 01:23:40 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-23 01:23:40 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-23 01:23:40 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-23 01:23:40 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+
+2016-05-23 01:23:45 :: SELECT *
+  FROM turma 
+
+2016-05-23 01:23:45 :: SELECT *
+  FROM inscricao 
+ WHERE (nota >= 7 AND frequencia >= 75 AND ref_turma = 1 AND cancelada = FALSE) 
+
+2016-05-23 01:23:45 :: SELECT *
+  FROM aluno 
+ WHERE (id = '5') 
+
+2016-05-23 01:23:45 :: SELECT *
+  FROM aluno 
+ WHERE (id = '7') 
+
+2016-05-23 01:23:45 :: SELECT *
+  FROM aluno 
+ WHERE (id = '8') 
+

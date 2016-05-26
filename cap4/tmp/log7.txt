@@ -1,0 +1,466 @@
+2016-05-21 02:38:59 :: ** seleciona inscrições da turma 2
+2016-05-21 02:38:59 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-21 02:39:02 :: ** seleciona inscrições da turma 2
+2016-05-21 02:39:02 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-21 02:39:09 :: ** seleciona inscrições da turma 2
+2016-05-21 02:39:09 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-21 02:39:09 :: ** altera as inscrições
+2016-05-21 02:39:09 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '51') 
+
+2016-05-21 02:39:09 :: UPDATE inscricao 
+ SET ref_aluno='11', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '51');
+2016-05-21 02:39:09 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '52') 
+
+2016-05-21 02:39:09 :: UPDATE inscricao 
+ SET ref_aluno='12', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '52');
+2016-05-21 02:39:09 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '53') 
+
+2016-05-21 02:39:09 :: UPDATE inscricao 
+ SET ref_aluno='13', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '53');
+2016-05-21 02:39:09 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '54') 
+
+2016-05-21 02:39:09 :: UPDATE inscricao 
+ SET ref_aluno='14', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '54');
+2016-05-21 02:39:09 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '55') 
+
+2016-05-21 02:39:09 :: UPDATE inscricao 
+ SET ref_aluno='15', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '55');
+2016-05-21 02:39:10 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '56') 
+
+2016-05-21 02:39:10 :: UPDATE inscricao 
+ SET ref_aluno='16', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '56');
+2016-05-21 02:39:10 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '57') 
+
+2016-05-21 02:39:10 :: UPDATE inscricao 
+ SET ref_aluno='17', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '57');
+2016-05-21 02:39:10 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '58') 
+
+2016-05-21 02:39:10 :: UPDATE inscricao 
+ SET ref_aluno='18', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '58');
+2016-05-21 02:39:10 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '59') 
+
+2016-05-21 02:39:10 :: UPDATE inscricao 
+ SET ref_aluno='19', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '59');
+2016-05-21 02:39:10 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '60') 
+
+2016-05-21 02:39:10 :: UPDATE inscricao 
+ SET ref_aluno='20', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '60');
+2016-05-21 02:39:31 :: ** seleciona inscrições da turma 2
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-21 02:39:31 :: ** altera as inscrições
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '51') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='11', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '51');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '52') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='12', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '52');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '53') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='13', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '53');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '54') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='14', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '54');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '55') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='15', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '55');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '56') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='16', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '56');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '57') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='17', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '57');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '58') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='18', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '58');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '59') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='19', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '59');
+2016-05-21 02:39:31 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '60') 
+
+2016-05-21 02:39:31 :: UPDATE inscricao 
+ SET ref_aluno='20', ref_turma='2', nota=8, frequencia=75, cancelada=0, concluida=0
+ WHERE (id = '60');
+2016-05-21 02:39:49 :: ** seleciona inscrições da turma 2
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-21 02:39:49 :: ** altera as inscrições
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '51') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='11', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '51');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '52') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='12', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '52');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '53') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='13', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '53');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '54') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='14', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '54');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '55') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='15', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '55');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '56') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='16', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '56');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '57') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='17', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '57');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '58') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='18', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '58');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '59') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='19', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '59');
+2016-05-21 02:39:49 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '60') 
+
+2016-05-21 02:39:49 :: UPDATE inscricao 
+ SET ref_aluno='20', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '60');
+2016-05-23 01:36:27 :: ** seleciona inscrições da turma 2
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-23 01:36:27 :: ** altera as inscrições
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '51') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='11', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '51');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '52') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='12', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '52');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '53') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='13', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '53');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '54') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='14', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '54');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '55') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='15', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '55');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '56') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='16', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '56');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '57') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='17', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '57');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '58') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='18', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '58');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '59') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='19', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '59');
+2016-05-23 01:36:27 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '60') 
+
+2016-05-23 01:36:27 :: UPDATE inscricao 
+ SET ref_aluno='20', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '60');
+2016-05-23 01:37:58 :: ** seleciona inscrições da turma 2
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-23 01:37:58 :: ** altera as inscrições
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '51') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='11', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '51');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '52') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='12', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '52');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '53') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='13', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '53');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '54') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='14', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '54');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '55') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='15', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '55');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '56') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='16', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '56');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '57') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='17', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '57');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '58') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='18', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '58');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '59') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='19', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '59');
+2016-05-23 01:37:58 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '60') 
+
+2016-05-23 01:37:58 :: UPDATE inscricao 
+ SET ref_aluno='20', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '60');
+2016-05-23 01:39:39 :: ** seleciona inscrições da turma 2
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (ref_turma = 2 AND cancelada = FALSE) 
+
+2016-05-23 01:39:39 :: ** altera as inscrições
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '51') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='11', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '51');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '52') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='12', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '52');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '53') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='13', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '53');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '54') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='14', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '54');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '55') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='15', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '55');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '56') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='16', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '56');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '57') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='17', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '57');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '58') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='18', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '58');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '59') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='19', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '59');
+2016-05-23 01:39:39 :: SELECT *
+  FROM inscricao 
+ WHERE (id = '60') 
+
+2016-05-23 01:39:39 :: UPDATE inscricao 
+ SET ref_aluno='20', ref_turma='2', nota=8, frequencia=100, cancelada=0, concluida=0
+ WHERE (id = '60');

@@ -1,0 +1,52 @@
+2016-05-21 01:46:28 :: ** obtendo o aluno 1
+2016-05-21 01:46:28 :: SELECT *
+  FROM aluno 
+ WHERE (id = 1) 
+
+2016-05-21 01:46:28 :: ** persistindo o aluno 1
+2016-05-21 01:46:28 :: SELECT *
+  FROM aluno 
+ WHERE (id = '1') 
+
+2016-05-21 01:46:28 :: UPDATE aluno 
+ SET nome='Daline Dall Oglio', endereco='Rua da Conceição', telefone='(48) 1111-3333', cidade='Cruzeiro do Sul'
+ WHERE (id = '1');
+2016-05-21 01:46:28 :: ** obtendo o curso 1
+2016-05-21 01:46:28 :: SELECT *
+  FROM curso 
+ WHERE (id = 1) 
+
+2016-05-21 01:46:28 :: ** persistindo o curso 1
+2016-05-21 01:46:28 :: SELECT *
+  FROM curso 
+ WHERE (id = '1') 
+
+2016-05-21 01:46:28 :: UPDATE curso 
+ SET descricao='Orientação a Objetos com PHP', duracao=28
+ WHERE (id = '1');
+2016-05-21 01:46:59 :: ** obtendo o aluno 1
+2016-05-21 01:46:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = 1) 
+
+2016-05-21 01:46:59 :: ** persistindo o aluno 1
+2016-05-21 01:46:59 :: SELECT *
+  FROM aluno 
+ WHERE (id = '1') 
+
+2016-05-21 01:46:59 :: UPDATE aluno 
+ SET nome='Daline Dall Oglio', endereco='Rua da Conceição', telefone='(48) 1111-3333', cidade='Florianópolis'
+ WHERE (id = '1');
+2016-05-21 01:46:59 :: ** obtendo o curso 1
+2016-05-21 01:46:59 :: SELECT *
+  FROM curso 
+ WHERE (id = 1) 
+
+2016-05-21 01:46:59 :: ** persistindo o curso 1
+2016-05-21 01:46:59 :: SELECT *
+  FROM curso 
+ WHERE (id = '1') 
+
+2016-05-21 01:46:59 :: UPDATE curso 
+ SET descricao='Orientação a Objetos com PHP', duracao=28
+ WHERE (id = '1');

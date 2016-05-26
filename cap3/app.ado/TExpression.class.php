@@ -1,5 +1,5 @@
 <?php 
-/*
+/**
  * classe TExpression
  * classe abstrata para gerenciar expressões
  */
@@ -23,4 +23,3 @@ abstract class
 é obrigatória a sua extensão
 ela não pode ser instanciada
 */
-?>

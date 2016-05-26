@@ -1,7 +1,9 @@
 <?php 
-/*
+/**
  * classe TFilter
+ * 
  * Esta classe provê uma interface para definição de filtros de seleção
+ * 
  */
 class TFilter extends TExpression
 {
@@ -9,11 +11,13 @@ class TFilter extends TExpression
     private $operator; // operador
     private $value;    // valor
     
-    /*
+    /**
      * método __construct()
+     * 
      * @param $variable = variável
      * @param $operator = operador (>,<)
      * @param $value    = valor a ser comparado
+     * 
      */
     public function __construct($variable, $operator, $value)
     {
@@ -21,8 +25,7 @@ class TFilter extends TExpression
         $this->variable = $variable;
         $this->operator = $operator;
         
-        // transforma o valor de acordo com certas regras
-        // antes de atribuir à propriedade $this->value
+        // transforma o valor de acordo com certas regras antes de atribuir à propriedade $this->value
         $this->value    = $this->transform($value);
     }
         
@@ -97,4 +100,3 @@ class TFilter extends TExpression
     }
     
 }
-?>

@@ -1,17 +1,17 @@
 <?php 
-/*
+/**
  * classe TConnection
  * gerencia conexões com bancos de dados através de arquivos de configuração.
  */
 final class TConnection
 {
-    /*
+    /**
      * método __construct()
      * não existirão instâncias de TConnection, por isto estamos marcando-o como private
      */
     private function __construct() {}
     
-    /*
+    /**
      * método open()
      * recebe o nome do banco de dados e instancia o objeto PDO correspondente
      * @param $name = nome do arquivo de configurações
@@ -69,5 +69,3 @@ final class TConnection
     }
 
 }
-
-?>

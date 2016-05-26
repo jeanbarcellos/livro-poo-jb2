@@ -1,12 +1,6 @@
 <?php
-/*
- * função __autoload()
- * carrega uma classe quando ela é necessária, ou seja, quando ela é instancia pela primeira vez.
- */
-function __autoload($classe)
-{
-    if (file_exists("app.ado/{$classe}.class.php"))
-    {
+function __autoload($classe) {
+    if (file_exists("app.ado/{$classe}.class.php")) {
         include_once "app.ado/{$classe}.class.php";
     }
 }
@@ -26,9 +20,8 @@ $sql->setRowData('sexo', 'M');
 $sql->setRowData('serie', 4);
 $sql->setRowData('mensalidade', 280.40);
 
-
 // processa a instrução SQL
 echo "<pre>";
 echo $sql->getInstruction();
-echo "<br>\n";
+
 

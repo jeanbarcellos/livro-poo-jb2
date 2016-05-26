@@ -16,7 +16,7 @@ final class TConnection
      * recebe o nome do banco de dados e instancia o objeto PDO correspondente
      * @param $name = nome do arquivo de configurações
      */
-    public static function open($name='my_livro')
+    public static function open($name = 'my_livro')
     {
         // verifica se existe arquivo de configuração para este banco de dados
         if (file_exists("app.config/{$name}.ini"))

@@ -1,0 +1,48 @@
+2016-05-21 01:56:29 :: ** persistindo o aluno $fabio
+2016-05-21 01:56:29 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-21 01:56:29 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Fábio Locatelli', 'Rua Merlin', '(51) 2222-1111', 'Lajeado', 3);
+2016-05-21 01:56:29 :: ** persistindo o aluno $julia
+2016-05-21 01:56:29 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-21 01:56:29 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Júlia Haubert', 'Rua Merlin', '(51) 2222-2222', 'Lajeado', 4);
+2016-05-22 21:44:06 :: ** persistindo o aluno $fabio
+2016-05-22 21:44:06 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-22 21:44:06 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Fábio Locatelli', 'Rua Merlin', '(51) 2222-1111', 'Lajeado', 41);
+2016-05-22 21:44:06 :: ** persistindo o aluno $julia
+2016-05-22 21:44:06 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-22 21:44:06 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Júlia Haubert', 'Rua Merlin', '(51) 2222-2222', 'Lajeado', 42);
+2016-05-22 21:45:00 :: ** persistindo o aluno $fabio
+2016-05-22 21:45:00 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-22 21:45:00 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Fábio Locatelli', 'Rua Merlin', '(51) 2222-1111', 'Lajeado', 43);
+2016-05-22 21:45:00 :: ** persistindo o aluno $julia
+2016-05-22 21:45:00 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-22 21:45:00 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Júlia Haubert', 'Rua Merlin', '(51) 2222-2222', 'Lajeado', 44);
+2016-05-22 21:47:18 :: ** persistindo o aluno $fabio
+2016-05-22 21:47:18 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-22 21:47:18 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Fábio Locatelli', 'Rua Merlin', '(51) 2222-1111', 'Lajeado', 45);
+2016-05-22 21:47:18 :: ** persistindo o aluno $julia
+2016-05-22 21:47:18 :: SELECT max(ID) as ID
+  FROM aluno 
+
+2016-05-22 21:47:18 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Júlia Haubert', 'Rua Merlin', '(51) 2222-2222', 'Lajeado', 46);

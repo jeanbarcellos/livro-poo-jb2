@@ -1,17 +1,19 @@
 <?php 
-/*
+/**
  * classe TSqlInsert
+ * 
  * Esta classe provê meios para manipulação de uma instrução de INSERT no banco de dados
  */
 final class TSqlInsert extends TSqlInstruction
 {
     private $columnValues;
 
-    /*
+    /**
      * método setRowData()
      * Atribui valores à determinadas colunas no banco de dados que serão inseridas
      * @param $column = coluna da tabela
      * @param $value = valor a ser armazenado
+     * 
      */
     public function setRowData($column, $value)
     {
@@ -82,5 +84,3 @@ final class TSqlInsert extends TSqlInstruction
 
 }
 
-
-?>
