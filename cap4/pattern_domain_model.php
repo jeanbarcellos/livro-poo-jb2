@@ -1,106 +1,105 @@
 <?php
+
 /*
  * class Produto
  * representa um Produto a ser vendido
  */
-final class Produto
-{
-    private $descricao;   // descrição do produto
+
+final class Produto {
+
+    private $descricao;   // descriÃ§Ã£o do produto
     private $estoque;     // estoque atual
-    private $preco_custo; // preço de custo
-    
+    private $preco_custo; // preÃ§o de custo
+
     /*
-     * método construtor
+     * mÃ©todo construtor
      * define alguns valores iniciais
-     * @param $descricao = descrição do produto
+     * @param $descricao = descriÃ§Ã£o do produto
      * @param $estoque      = estoque atual
      * @param $preco_custo= preco de custo
      */
-    public function __construct($descricao, $estoque, $preco_custo)
-    {
+
+    public function __construct($descricao, $estoque, $preco_custo) {
         $this->descricao = $descricao;
-        $this->estoque    = $estoque;
-        $this->preco_custo= $preco_custo;
+        $this->estoque = $estoque;
+        $this->preco_custo = $preco_custo;
     }
-    
+
     /*
-     * método registraCompra
+     * mÃ©todo registraCompra
      * registra uma compra, atualiza custo e incrementa o estoque atual
      * @param $unidades    = unidades adquiridas
      * @param $preco_custo = novo preco de custo
      */
-    public function registraCompra($unidades, $preco_custo)
-    {
+
+    public function registraCompra($unidades, $preco_custo) {
         $this->preco_custo = $preco_custo;
-        $this->estoque    += $unidades;
+        $this->estoque += $unidades;
     }
-    
+
     /*
-     * método registraVenda
+     * mÃ©todo registraVenda
      * registra uma venda e decrementa o estoque
      * @param $unidades = unidades vendidas
      */
-    public function registraVenda($unidades)
-    {
+
+    public function registraVenda($unidades) {
         $this->estoque -= $unidades;
     }
-    
+
     /*
-     * método getEstoque
+     * mÃ©todo getEstoque
      * retorna a quantidade em estoque
      */
-    public function getEstoque()
-    {
+
+    public function getEstoque() {
         return $this->estqoue;
     }
-    
+
     /*
-     * método calculaPrecoVenda
+     * mÃ©todo calculaPrecoVenda
      * retorna o preco de venda, baseado em uma margem de 30% sobre o custo
      */
-    public function calculaPrecoVenda()
-    {
+
+    public function calculaPrecoVenda() {
         return $this->preco_custo * 1.3;
     }
+
 }
 
 /*
  * classe Venda
  * representa uma Venda de Produtos
  */
-final class Venda
-{
+
+final class Venda {
+
     private $itens; // itens da venda
-    
+
     /*
-     * método addItem
+     * mÃ©todo addItem
      * adiciona um item na venda
      * @param $quantidade = quantidade vendida
      * @param $produto    = objeto produto
      */
-    public function addItem($quantidade, Produto $produto)
-    {
+
+    public function addItem($quantidade, Produto $produto) {
         $this->itens[] = array($quantidade, $produto);
     }
-    
+
     /*
-     * método getItems
+     * mÃ©todo getItems
      * retorna o array de itens da venda
      */
-    public function getItens()
-    {
+
+    public function getItens() {
         return $this->itens;
     }
-    
+
 }
 
-
-
-
-
-
 // instancia objeto Venda
-$venda= new Venda;
+$venda = new Venda;
 
 // adiciona alguns produtos
 $venda->addItem(3, new Produto('Vinho', 10, 15));  // 58.5
@@ -116,11 +115,11 @@ $total = 0;
 
 foreach ($venda->getItens() as $item) {
     $quantidade = $item[0];
-    $produto    = $item[1];
-    
+    $produto = $item[1];
+
     // soma o total
     $total += $produto->calculaPrecoVenda() * $quantidade;
-    
+
     // diminui estoque
     $produto->registraVenda($quantidade);
 }

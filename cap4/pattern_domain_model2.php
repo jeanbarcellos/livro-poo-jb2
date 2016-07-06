@@ -5,14 +5,14 @@
  */
 final class Produto
 {
-    private $descricao;      // descrição do produto
+    private $descricao;      // descriÃ§Ã£o do produto
     private $estoque;        // estoque atual
-    private $preco_custo;    // preço de custo
+    private $preco_custo;    // preÃ§o de custo
     
     /*
-     * método construtor
+     * mÃ©todo construtor
      * define alguns valores iniciais
-     * @param $descricao = descrição do produto
+     * @param $descricao = descriÃ§Ã£o do produto
      * @param $estoque      = estoque atual
      * @param $preco_custo= preco de custo
      */
@@ -24,7 +24,7 @@ final class Produto
     }
     
     /*
-     * método registraCompra
+     * mÃ©todo registraCompra
      * registra uma compra, atualiza custo e incrementa o estoque atual
      * @param $unidades     = unidades adquiridas
      * @param $preco_custo= novo preco de custo
@@ -36,7 +36,7 @@ final class Produto
     }
     
     /*
-     * método registraVenda
+     * mÃ©todo registraVenda
      * registra uma venda e decrementa o estoque
      * @param $unidades    = unidades vendidas
      */
@@ -46,7 +46,7 @@ final class Produto
     }
     
     /*
-     * método getEstoque
+     * mÃ©todo getEstoque
      * retorna a quantidade em estoque
      */
     public function getEstoque()
@@ -55,7 +55,7 @@ final class Produto
     }
     
     /*
-     * método calculaPrecoVenda
+     * mÃ©todo calculaPrecoVenda
      * retorna o preco de venda, baseado em uma margem de 30% sobre o custo
      */
     public function calculaPrecoVenda()
@@ -73,7 +73,7 @@ final class Venda
     private $itens;	   // itens da cesta
     
     /*
-     * método addItem
+     * mÃ©todo addItem
      * adiciona um item na cesta
      * @param $quantidade = quantidade vendida
      * @param $produto      = objeto produto
@@ -84,7 +84,7 @@ final class Venda
     }
     
     /*
-     * método getItems
+     * mÃ©todo getItems
      * retorna o array de itens da cesta
      */
     public function getItens()
@@ -93,12 +93,13 @@ final class Venda
     }
     
     /*
-     * método finaliza
+     * mÃ©todo finaliza
      * calcula o total de uma cesta e diminuir o estoque
      */
     public function finalizaVenda()
     {
         $total = 0;
+        
         
         foreach ($this->itens as $item) {
             $quantidade = $item[0];
