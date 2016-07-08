@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Classe TRecord
  *
@@ -6,7 +7,7 @@
  * recuperar objetos da base de dados (Active Record)
  */
 abstract class TRecord {
-    
+
     protected $data; // array contendo os dados do objeto
 
     /**
@@ -20,7 +21,7 @@ abstract class TRecord {
             // carrega o objeto correspondente
             $object = $this->load($id);
 
-            if ($object){
+            if ($object) {
                 $this->fromArray($object->toArray());
             }
         }
@@ -41,9 +42,9 @@ abstract class TRecord {
      */
     public function __set($prop, $value) {
         // verifica se existe método set_<propriedade>
-        if (method_exists($this, 'set_'.$prop)){
+        if (method_exists($this, 'set_' . $prop)) {
             // executa o método set_<propriedade>
-            call_user_func(array($this, 'set_'.$prop), $value);
+            call_user_func(array($this, 'set_' . $prop), $value);
         } else {
             if ($value === NULL) {
                 unset($this->data[$prop]);
@@ -58,11 +59,11 @@ abstract class TRecord {
      * método __get()
      * executado sempre que uma propriedade for requerida
      */
-    public function __get($prop) {        
+    public function __get($prop) {
         // verifica se existe método get_<propriedade>
-        if (method_exists($this, 'get_'.$prop)) {
+        if (method_exists($this, 'get_' . $prop)) {
             // executa o método get_<propriedade>
-            return call_user_func(array($this, 'get_'.$prop));
+            return call_user_func(array($this, 'get_' . $prop));
         } else {
             // retorna o valor da propriedade
             if (isset($this->data[$prop])) {
@@ -98,13 +99,16 @@ abstract class TRecord {
     public function toArray() {
         return $this->data;
     }
+    
 
     /**
      * método store()
+     * 
      * armazena o objeto na base de dados e retorna
      * o número de linhas afetadas pela instrução SQL (zero ou um)
      */
     public function store() {
+        
         // verifica se tem ID ou se existe na base de dados
         if (empty($this->data['id']) or (!$this->load($this->id))) {
             // incrementa o ID
@@ -121,7 +125,6 @@ abstract class TRecord {
                 // passa os dados do objeto para o SQL
                 $sql->setRowData($key, $this->$key);
             }
-
         } else {
             // instancia instrução de update
             $sql = new TSqlUpdate;
@@ -133,7 +136,7 @@ abstract class TRecord {
             $sql->setCriteria($criteria);
 
             // percorre os dados do objeto
-            foreach ($this->data as $key => $value){
+            foreach ($this->data as $key => $value) {
                 // o ID não precisa ir no UPDATE
                 if ($key !== 'id') {
                     // passa os dados do objeto para o SQL
@@ -149,14 +152,13 @@ abstract class TRecord {
 
             // e executa o SQL
             $result = $conn->exec($sql->getInstruction());
-            
+
             // retorna o resultado
             return $result;
         } else {
             // se não tiver transação, retorna uma exceção
             throw new Exception('Não há transação ativa!!');
         }
-
     }
 
     /**
@@ -166,7 +168,7 @@ abstract class TRecord {
      * @param $id = ID do objeto
      */
     public function load($id) {
-        
+
         // instancia instrução de SELECT
         $sql = new TSqlSelect;
         $sql->setEntity($this->getEntity());
@@ -181,12 +183,12 @@ abstract class TRecord {
 
         // obtém transação ativa
         if ($conn = TTransaction::get()) {
-            
+
             // cria mensagem de log ...
             TTransaction::log($sql->getInstruction());
-            
+
             // e executa a consulta
-            $result= $conn->Query($sql->getInstruction());
+            $result = $conn->Query($sql->getInstruction());
 
             // se retornou algum dado
             if ($result) {
@@ -194,7 +196,6 @@ abstract class TRecord {
                 $object = $result->fetchObject(get_class($this));
             }
             return $object;
-            
         } else {
             // se não tiver transação, retorna uma exceção
             throw new Exception('Não há transação ativa!!');
@@ -206,8 +207,7 @@ abstract class TRecord {
      * exclui um objeto da base de dados através de seu ID.
      * @param $id = ID do objeto
      */
-    public function delete($id = NULL)
-    {
+    public function delete($id = NULL) {
         // o ID é o parâmetro ou a propriedade ID
         $id = $id ? $id : $this->id;
 
@@ -226,10 +226,10 @@ abstract class TRecord {
         if ($conn = TTransaction::get()) {
             // faz o log ...
             TTransaction::log($sql->getInstruction());
-            
+
             //e executa o SQL
             $result = $conn->exec($sql->getInstruction());
-            
+
             // retorna o resultado
             return $result;
         } else {
@@ -245,7 +245,7 @@ abstract class TRecord {
     private function getLast() {
         // inicia transação
         if ($conn = TTransaction::get()) {
-            
+
             // instancia instrução de SELECT
             $sql = new TSqlSelect;
             $sql->addColumn('MAX(ID) AS ID');
@@ -253,9 +253,9 @@ abstract class TRecord {
 
             // cria log ...
             TTransaction::log($sql->getInstruction());
-            
+
             // e executa instrução SQL
-            $result= $conn->Query($sql->getInstruction());
+            $result = $conn->Query($sql->getInstruction());
 
             // retorna os dados do banco
             $row = $result->fetch();
@@ -265,4 +265,5 @@ abstract class TRecord {
             throw new Exception('Não há transação ativa!!');
         }
     }
+
 }

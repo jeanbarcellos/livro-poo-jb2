@@ -14,3 +14,11 @@
 2016-05-23 01:06:52 :: DELETE FROM aluno WHERE (id = '1');
 2016-05-23 01:06:52 :: ** Apagando da segunda forma
 2016-05-23 01:06:52 :: DELETE FROM aluno WHERE (id = 2);
+2016-07-06 18:58:18 :: ** Apagando da primeira forma
+2016-07-06 18:58:18 :: SELECT *
+  FROM aluno 
+ WHERE (id = 1) 
+
+2016-07-06 18:58:18 :: DELETE FROM aluno WHERE (id = '1');
+2016-07-06 18:58:18 :: ** Apagando da segunda forma
+2016-07-06 18:58:18 :: DELETE FROM aluno WHERE (id = 2);

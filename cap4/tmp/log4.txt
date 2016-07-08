@@ -46,3 +46,15 @@
 
 2016-05-22 21:47:18 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
  VALUES ('Júlia Haubert', 'Rua Merlin', '(51) 2222-2222', 'Lajeado', 46);
+2016-07-06 18:57:42 :: ** persistindo o aluno $fabio
+2016-07-06 18:57:42 :: SELECT MAX(ID) AS ID
+  FROM aluno 
+
+2016-07-06 18:57:42 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Fábio Locatelli', 'Rua Merlin', '(51) 2222-1111', 'Lajeado', 51);
+2016-07-06 18:57:42 :: ** persistindo o aluno $julia
+2016-07-06 18:57:42 :: SELECT MAX(ID) AS ID
+  FROM aluno 
+
+2016-07-06 18:57:42 :: INSERT INTO aluno (nome, endereco, telefone, cidade, id) 
+ VALUES ('Júlia Haubert', 'Rua Merlin', '(51) 2222-2222', 'Lajeado', 52);

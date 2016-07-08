@@ -42,7 +42,6 @@ try
         
     $aluno = new Aluno(1); // carrrega o objeto        
     $aluno->delete(); // delete o objeto
-
     
     
     TTransaction::log("** Apagando da segunda forma"); // armazena esta frase no arquivo de LOG
