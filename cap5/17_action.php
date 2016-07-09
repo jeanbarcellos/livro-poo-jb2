@@ -10,14 +10,12 @@ class Receptor {
 
 }
 
-$receptor = new Receptor;
-$action1 = new TAction(array($receptor, 'acao'));
+$action1 = new TAction(array(new Receptor, 'acao'));
 $action1->setParameter('nome', 'pablo');
-
+$action1->setParameter('opt', 'ins');
 echo $action1->serialize();
 echo "<br>\n";
 
 $action2 = new TAction('strtoup');
 $action2->setParameter('nome', 'pablo');
-
 echo $action2->serialize();

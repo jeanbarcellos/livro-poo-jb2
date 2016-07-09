@@ -28,6 +28,7 @@ class TPage extends TElement {
      * executa determinado método de acordo com os parâmetros recebidos
      */
     public function run() {
+        
         if ($_GET) {
             $class = isset($_GET['class']) ? $_GET['class'] : NULL;
             $method = isset($_GET['method']) ? $_GET['method'] : NULL;

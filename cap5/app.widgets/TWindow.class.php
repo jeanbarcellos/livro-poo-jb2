@@ -67,6 +67,7 @@ class TWindow {
      */
 
     public function show() {
+        
         $window_id = 'TWindow' . self::$counter;
 
         // instancia objeto TStyle para definir as características
@@ -88,11 +89,11 @@ class TWindow {
         $painel = new TElement('div');
         $painel->id = $window_id; // define o ID
         $painel->class = $window_id;   // define a classe CSS
-        // instancia objeto TTable
-        $table = new TTable;
 
-        // define as propriedades da tabela
-        $table->width = '100%';
+        
+        // instancia objeto TTable
+        $table = new TTable;        
+        $table->width = '100%'; // define as propriedades da tabela
         $table->height = '100%';
         $table->style = 'border-collapse:collapse';
 
@@ -102,7 +103,7 @@ class TWindow {
         $row1->height = '20px';
 
         // adiciona uma célula para o título
-        $titulo = $row1->addCell("<font face=Arial size=2 color=white><b>{$this->title}</b></font>");
+        $titulo = $row1->addCell("<font face=\"Arial\" size=\"2\" color=\"#FFF\"><b>{$this->title}</b></font>");
         $titulo->width = '100%';
 
         // cria um link com ação para esconder o <div>

@@ -33,12 +33,16 @@ class TAction {
      * transforma a ação em uma string do tipo URL
      */
     public function serialize() {
+
         // verifica se a ação é um método
         if (is_array($this->action)) {
+
             // obtém o nome da classe
             $url['class'] = get_class($this->action[0]);
+
             // obtém o nome do método
             $url['method'] = $this->action[1];
+
         } else if (is_string($this->action)) { // é uma string
             // obtém o nome da função
             $url['method'] = $this->action;
@@ -52,5 +56,3 @@ class TAction {
     }
 
 }
-
-?>

@@ -23,10 +23,10 @@ $painel = new TPanel(210, 130);
 $painel->put(new TParagraph('<b>texto1</b>'), 20, 20);
 $painel->put(new TImage('app.images/gnome.png'), 80, 20);
 
+
 // instancia um objeto TWindow nas coordenadas 140,120 contendo um painel
 $janela3 = new TWindow('janela3');
 $janela3->setPosition(140, 120);
 $janela3->setSize(220, 160);
 $janela3->add($painel);
 $janela3->show();
-?>

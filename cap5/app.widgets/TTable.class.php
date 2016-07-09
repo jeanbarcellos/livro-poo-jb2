@@ -19,11 +19,13 @@ class TTable extends TElement {
      * agrega um novo objeto linha (TTableRow) na tabela
      */
     public function addRow() {
+
         // instancia objeto linha
         $row = new TTableRow;
 
         // armazena no array de linhas
         parent::add($row);
+
         return $row;
     }
 

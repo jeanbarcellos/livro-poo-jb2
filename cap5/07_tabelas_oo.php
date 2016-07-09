@@ -15,26 +15,23 @@ $dados[] = array(3, 'Erasmo Carlos', 'http://www.erasmo.com.br', 2500);
 
 // instancia objeto tabela
 $tabela = new TTable;
-
-// define algumas propriedades
 $tabela->width = 600;
 $tabela->border = 1;
 
 // instancia uma linha para o cabeçalho
 $cabecalho = $tabela->addRow();
-
-// define a cor de fundo
 $cabecalho->bgcolor = '#a0a0a0'; // cor de fundo
-// adiciona células
 $cabecalho->addCell('Código');
 $cabecalho->addCell('Nome');
 $cabecalho->addCell('Site');
 $cabecalho->addCell('Salário');
+
 $i = 0;
 $total = 0;
 
 // percorre os dados
 foreach ($dados as $pessoa) {
+    
     // verifica qual cor utilizar para o fundo
     $bgcolor = ($i % 2) == 0 ? '#d0d0d0' : '#ffffff';
 
@@ -64,4 +61,3 @@ $celula->align = "right";
 
 // exibe a tabela
 $tabela->show();
-?>

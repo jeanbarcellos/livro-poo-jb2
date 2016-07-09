@@ -1,4 +1,5 @@
 <?php
+
 // inclui as classes necessárias
 include_once 'app.widgets/TElement.class.php';
 include_once 'app.widgets/TImage.class.php';
@@ -15,28 +16,28 @@ $tabela->border = 1;
 $linha1 = $tabela->addRow();
 
 // cria um objeto parágrafo
-$paragrafo= new TParagraph('Este é o logo do GNOME');
+$paragrafo = new TParagraph('Este é o logo do GNOME');
 $paragrafo->setAlign('left');
 
 // adiciona célula contendo o objeto
 $linha1->addCell($paragrafo);
 
 // cria um objeto imagem
-$imagem= new Timage('app.images/gnome.png');
+$imagem = new Timage('app.images/gnome.png');
 $linha1->addCell($imagem);
 
 // acrescenta uma linha na tabela
 $linha2 = $tabela->addRow();
 
 // cria um objeto parágrafo
-$paragrafo= new TParagraph('Este é o logo do GIMP');
+$paragrafo = new TParagraph('Este é o logo do GIMP');
 $paragrafo->setAlign('left');
 
 // adiciona célula contendo o objeto
 $linha2->addCell($paragrafo);
 
 // cria um objeto imagem
-$imagem= new Timage('app.images/gimp.png');
+$imagem = new Timage('app.images/gimp.png');
 
 // adiciona célula contendo o objeto
 $linha2->addCell($imagem);

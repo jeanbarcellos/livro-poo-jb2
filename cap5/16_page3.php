@@ -45,9 +45,8 @@ function onEmpresa($get) {
 // exibe alguns links
 echo "<a href='?method=onProdutos'>Produtos</a><br>";
 echo "<a href='?method=onContato'>Contato</a><br>";
-echo "<a href='?method=onEmpresa'>Empresa</a><br>";
+echo "<a href='?method=onEmpresa'>Empresa</a><br><br>";
 
 // interpreta a página
 $pagina = new TPage;
 $pagina->show();
-?>

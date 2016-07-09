@@ -26,28 +26,23 @@ class Pagina extends TPage {
 
         // adiciona uma linha na tabela
         $row = $this->table->addRow();
-        $row->bgcolor = '#d0d0d0';
-
-        // cria três ações
+        $row->bgcolor = '#d0d0d0';        
+        
         $action1 = new TAction(array($this, 'onProdutos'));
+        $link1 = new TElement('a'); // cria três links
+        $link1->href = $action1->serialize(); // define a ação dos links
+        $link1->add('Produtos'); // define o rótulo de texto dos links
+        
         $action2 = new TAction(array($this, 'onContato'));
-        $action3 = new TAction(array($this, 'onEmpresa'));
-
-        // cria três links
-        $link1 = new TElement('a');
         $link2 = new TElement('a');
-        $link3 = new TElement('a');
-
-        // define a ação dos links
-        $link1->href = $action1->serialize();
         $link2->href = $action2->serialize();
-        $link3->href = $action3->serialize();
-
-        // define o rótulo de texto dos links
-        $link1->add('Produtos');
         $link2->add('Contato');
-        $link3->add('Empresa');
-
+        
+        $action3 = new TAction(array($this, 'onEmpresa'));
+        $link3 = new TElement('a');        
+        $link3->href = $action3->serialize();
+        $link3->add('Empresa');        
+        
         // adiciona os links na linha
         $row->addCell($link1);
         $row->addCell($link2);
@@ -66,6 +61,7 @@ class Pagina extends TPage {
      * @param $get = variável $_GET
      */
     function onProdutos($get) {
+        
         $texto = "Nesta seção você vai conhecer os produtos da nossa empresa
         Temos desde pintos, frangos, porcos, bois, vacas e todo tipo de animal
         que você pode imaginar na nossa fazenda.";
@@ -93,9 +89,11 @@ class Pagina extends TPage {
      * @param $get = variável $_GET
      */
     function onContato($get) {
+        
         $texto = "Para entrar em contato com nossa empresa,
         ligue para 0800-1234-5678 ou mande uma carta endereçada para
         Linha alto coqueiro baixo, fazenda recanto escondido.";
+        
         // adiciona o texto na linha de conteúdo da tabela
         $celula = $this->content->addCell($texto);
         $celula->colspan = 3;
@@ -107,6 +105,7 @@ class Pagina extends TPage {
      * @param $get = variável $_GET
      */
     function onEmpresa($get) {
+        
         $texto = "Aqui na fazenda recanto escondido fazemos eco-turismo,
         você vai poder conhecer nossas instalações,
         tirar leite diretamente da vaca, recolher os ovos do galinheiro e o mais
