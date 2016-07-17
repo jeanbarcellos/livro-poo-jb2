@@ -6,7 +6,7 @@
  */
 class TWindow {
 
-    private $x;          // coluna
+    private $x;          // colunaW
     private $y;          // linha
     private $width;      // largura
     private $height;     // altura
@@ -18,7 +18,6 @@ class TWindow {
      * método construtor
      * incrementa o contador de janelas
      */
-
     public function __construct($title) {
         // incrementa o contador de janelas para exibir cada um com um ID diferente
         self::$counter ++;

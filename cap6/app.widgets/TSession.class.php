@@ -1,16 +1,16 @@
 <?php
+
 /**
  * classe TSession
  * gerencia uma seção com o usuário
  */
-class TSession
-{
+class TSession {
+
     /**
      * método construtor
      * inicializa uma seção
      */
-    public function __construct()
-    {
+    public function __construct() {
         session_start();
     }
 
@@ -20,8 +20,7 @@ class TSession
      * @param $var     = Nome da variável
      * @param $value = Valor
      */
-    public static function setValue($var, $value)
-    {
+    public static function setValue($var, $value) {
         $_SESSION[$var] = $value;
     }
 
@@ -30,10 +29,8 @@ class TSession
      * retorna uma variável da seção
      * @param $var = Nome da variável
      */
-    public static function getValue($var)
-    {
-        if (isset($_SESSION[$var]))
-        {
+    public static function getValue($var) {
+        if (isset($_SESSION[$var])) {
             return $_SESSION[$var];
         }
     }
@@ -42,10 +39,9 @@ class TSession
      * método freeSession()
      * destrói os dados de uma seção
      */
-    public static function freeSession()
-    {
+    public static function freeSession() {
         $_SESSION = array();
         session_destroy();
     }
+
 }
-?>

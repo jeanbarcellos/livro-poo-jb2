@@ -15,7 +15,7 @@ class TImage extends TElement {
      */
 
     public function __construct($source) {
-        
+
         parent::__construct('img');
 
         // atribui a localização da imagem

@@ -14,7 +14,7 @@ class TQuestion {
      * @param $action_no = ação para resposta negativa
      */
     function __construct($message, TAction $action_yes, TAction $action_no) {
-        
+
         $style = new TStyle('tquestion');
         $style->position = 'absolute';
         $style->left = '30%';

@@ -88,7 +88,9 @@ class TForm {
         $object = new $class;
 
         foreach ($this->fields as $key => $fieldObject) {
+
             $val = isset($_POST[$key]) ? $_POST[$key] : '';
+
             if (get_class($this->fields[$key]) == 'TCombo') {
                 if ($val !== '0') {
                     $object->$key = $val;

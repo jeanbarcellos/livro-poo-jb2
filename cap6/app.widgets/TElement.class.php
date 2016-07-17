@@ -27,8 +27,7 @@ class TElement {
      * @param $value     = valor
      */
     public function __set($name, $value) {
-        // armazena os valores atribuídos
-        // ao array properties
+        // armazena os valores atribuídos ao array properties
         $this->properties[$name] = $value;
     }
 
@@ -72,7 +71,7 @@ class TElement {
                 // se for objeto
                 if (is_object($child)) {
                     $child->show();
-                } else if ((is_string($child)) or ( is_numeric($child))) {
+                } else if ((is_string($child)) or (is_numeric($child))) {
                     // se for texto
                     echo $child;
                 }
@@ -87,7 +86,7 @@ class TElement {
      * Fecha uma tag HTML
      */
     private function close() {
-        echo "</{$this->name}>\n";
+        echo "  \n</{$this->name}>\n";
     }
 
 }

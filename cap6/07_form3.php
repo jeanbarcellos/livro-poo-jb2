@@ -1,4 +1,5 @@
 <?php
+
 // FORMULÁRIO ESTRUTURADO, COM BANCO DE DADOS
 
 /*
@@ -23,6 +24,7 @@ class Pessoa extends TRecord {
 
 }
 
+//------------------------------------------------------------------------------
 
 // instancia um formulário
 $form = new TForm('form_pessoas');
@@ -33,13 +35,13 @@ $table->bgcolor = '#f0f0f0'; // define algumas propriedades da tabela
 $table->style = 'border:2px solid grey';
 $table->width = 400;
 
-// adiciona a tabela ao formulário
-$form->add($table);
+//// adiciona a tabela ao formulário
+//$form->add($table);
 
 // cria os campos do formulário ------------------------------------------------
 $codigo = new TEntry('id');
-$codigo->setSize(100); // define tamanho para campo código
-$codigo->setEditable(FALSE); // define como somente leitura
+$codigo->setSize(100); 
+$codigo->setEditable(FALSE);
 
 // cria os campos do formulário ------------------------------------------------
 $nome = new TEntry('nome');
@@ -49,24 +51,24 @@ $endereco = new TEntry('endereco');
 
 // cria os campos do formulário ------------------------------------------------
 $datanasc = new TEntry('datanasc');
-$datanasc->setSize(100); // define tamanho para campo data de nascimento
+$datanasc->setSize(100); 
 
 // cria os campos do formulário ------------------------------------------------
 $sexo = new TRadioGroup('sexo');
-$items = array(); // cria um vetor com as opções de sexo
-$items['M'] = 'Masculino';
-$items['F'] = 'Feminino';
+    $items = array(); // cria um vetor com as opções de sexo
+    $items['M'] = 'Masculino';
+    $items['F'] = 'Feminino';
 $sexo->addItems($items); // adiciona as opções ao radio button
-$sexo->setValue('M');// define a opção ativa
+$sexo->setValue('M'); // define a opção ativa
 $sexo->setLayout('horizontal'); // define a posição dos elementos
 
 // cria os campos do formulário ------------------------------------------------
 $linguas = new TCheckGroup('linguas');
-$items2 = array();// cria um vetor com as opções de idiomas
-$items2['E'] = 'Inglês';
-$items2['S'] = 'Espanhol';
-$items2['I'] = 'Italiano';
-$items2['F'] = 'Francês';
+    $items2 = array(); // cria um vetor com as opções de idiomas
+    $items2['E'] = 'Inglês';
+    $items2['S'] = 'Espanhol';
+    $items2['I'] = 'Italiano';
+    $items2['F'] = 'Francês';
 $linguas->addItems($items2); // adiciona as opções ao check button
 $linguas->setValue(array('E', 'I')); // define as opções ativas
 
@@ -76,6 +78,7 @@ $qualifica->setValue('<digite suas qualificações aqui>'); // define um valor p
 $qualifica->setSize(240);
 
 // -----------------------------------------------------------------------------
+
 
 // adiciona uma linha para o campo código na tabela
 $row = $table->addRow();
@@ -124,6 +127,8 @@ $form->setFields(array($codigo, $nome, $endereco, $datanasc, $sexo, $linguas, $q
 
 // -----------------------------------------------------------------------------
 
+// adiciona a tabela ao formulário
+$form->add($table);
 
 // instancia uma nova página
 $page = new TPage;
@@ -134,31 +139,37 @@ $page->add($form);
 // exibe a página e seu conteúdo
 $page->show();
 
-/*
+
+
+/**
  * função onSave
  * obtém os dados do formulário e salva na base de dados
  */
-
 function onSave() {
-    
+
     global $form;
-    
+
     $pessoa = $form->getData('Pessoa');
 
     try {
         // inicia transação com o banco
         TTransaction::open();
         
+        // Trata alguns dados antes de inserir
         $pessoa->linguas = implode(' ', $pessoa->linguas);
         $pessoa->datanasc = conv_data_to_us($pessoa->datanasc);
-        
+
+        // persiste no banco
         $pessoa->store();
 
         // finaliza a transação
         TTransaction::close();
+        
+        // exibemensagem de sucesso
         new TMessage('info', 'Dados armazenados com sucesso');
         
     } catch (Exception $e) { // em caso de exceção
+        
         // exibe a mensagem gerada pela exceção
         new TMessage('error', '<b>Erro</b>' . $e->getMessage());
 
@@ -173,6 +184,7 @@ function onSave() {
  * @param $param = parâmetros passados via URL ($_GET)
  */
 function onEdit($param) {
+    
     global $form;
 
     try {
@@ -181,13 +193,19 @@ function onEdit($param) {
 
         // obtém a pessoa a partir do parâmetro ID
         $pessoa = new Pessoa($param['id']);
+        
+        // trata alguns dados antesde setá-los
         $pessoa->linguas = explode(' ', $pessoa->linguas);
         $pessoa->datanasc = conv_data_to_br($pessoa->datanasc);
+        
+        // atribui dados aos campos do formulário
         $form->setData($pessoa);
 
         // finaliza a transação
         TTransaction::close();
+        
     } catch (Exception $e) { // em caso de exceção
+
         // exibe a mensagem gerada pela exceção
         new TMessage('error', '<b>Erro</b>' . $e->getMessage());
 
@@ -220,4 +238,3 @@ function conv_data_to_br($data) {
     return "{$dia}/{$mes}/{$ano}";
 }
 
-?>
