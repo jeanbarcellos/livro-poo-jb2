@@ -48,6 +48,7 @@ class TElement {
     private function open() {
         // exibe a tag de abertura
         echo "<{$this->name}";
+        
         if ($this->properties) {
             // percorre as propriedades
             foreach ($this->properties as $name => $value) {
@@ -65,10 +66,12 @@ class TElement {
         // abre a tag
         $this->open();
         echo "\n";
+        
         // se possui conteúdo
         if ($this->children) {
             // percorre todos objetos filhos
             foreach ($this->children as $child) {
+                
                 // se for objeto
                 if (is_object($child)) {
                     $child->show();
@@ -87,7 +90,7 @@ class TElement {
      * Fecha uma tag HTML
      */
     private function close() {
-        echo "</{$this->name}>\n";
+        echo "  \n</{$this->name}>\n";
     }
 
 }
