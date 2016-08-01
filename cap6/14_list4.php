@@ -34,6 +34,7 @@ class PessoasList extends TPage {
     private $datagrid;
 
     public function __construct() {
+        
         parent::__construct();
 
         // instancia objeto DataGrid

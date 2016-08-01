@@ -81,7 +81,9 @@ $item->fone = '4444-4444';
 $datagrid->addItem($item);
 
 // teste
-#$datagrid->show();
+//$datagrid->show();
+
+
 
 // instancia uma página TPage
 $page = new TPage;

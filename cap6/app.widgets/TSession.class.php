@@ -17,7 +17,7 @@ class TSession {
     /**
      * método setValue()
      * armazena uma variável na seção
-     * @param $var     = Nome da variável
+     * @param $var   = Nome da variável
      * @param $value = Valor
      */
     public static function setValue($var, $value) {
