@@ -1,12 +1,12 @@
 <?php
+
 ini_set('default_charset', 'utf-8');
 
-/*
+/**
  * função __autoload()
  * Carrega uma classe quando ela é necessária,
  * ou seja, quando ela é instancia pela primeira vez.
  */
-
 function __autoload($classe) {
     if (file_exists("app.ado/{$classe}.class.php")) {
         include_once "app.ado/{$classe}.class.php";
@@ -25,7 +25,8 @@ $sql->setCriteria($criteria); // atribui o critério de seleção de dados
 
 
 echo "Conexão MySQL <br>";
-### MySQL
+
+### MySQL ----------------------------------------------------------------------
 try {
     // abre conexão com a base my_livro (mysql)
     $conn = TConnection::open();
@@ -38,8 +39,10 @@ try {
         // exibe os dados resultantes
         echo $row['codigo'] . ' - ' . $row['nome'] . "<br>\n";
     }
+    
     // fecha a conexão
     $conn = null;
+    
 } catch (PDOException $e) {
     // exibe a mensagem de erro
     print "Erro!: " . $e->getMessage() . "<br/>";
@@ -49,9 +52,9 @@ try {
 
 echo "<br>Conexão PostgreSQL <br>";
 
-## PostgreSQL
+## PostgreSQL ------------------------------------------------------------------
 try {
-    
+
     // abre conexão com a base pg_livro (postgres)
     $conn = TConnection::open('pg_livro');
 
@@ -63,11 +66,12 @@ try {
         // exibe os dados resultantes
         echo $row['codigo'] . ' - ' . $row['nome'] . "<br>\n";
     }
+    
     // fecha a conexão
     $conn = NULL;
     
 } catch (Exception $e) {
-    
+
     // exibe a mensagem de erro
     print "Erro!: " . $e->getMessage() . "<br/>";
     die();

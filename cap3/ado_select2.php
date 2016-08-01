@@ -48,9 +48,7 @@ $sql->addColumn('*');
 $sql->setCriteria($criteria);
 
 
-
 // processa a instrução SQL
 echo "<pre>";
 echo $sql->getInstruction();
 echo "<br>\n";
-?>

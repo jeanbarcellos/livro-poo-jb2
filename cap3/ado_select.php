@@ -1,12 +1,11 @@
 <?php
-/*
+/**
  * função __autoload()
  * carrega uma classe quando ela é necessária, ou seja, quando ela é instancia pela primeira vez.
  */
-function __autoload($classe)
-{
-    if (file_exists("app.ado/{$classe}.class.php"))
-    {
+
+function __autoload($classe) {
+    if (file_exists("app.ado/{$classe}.class.php")) {
         include_once "app.ado/{$classe}.class.php";
     }
 }
@@ -14,7 +13,7 @@ function __autoload($classe)
 // cria critério de seleção de dados
 $criteria = new TCriteria;
 $criteria->add(new TFilter('nome', 'LIKE', 'maria%'));
-$criteria->add(new TFilter('cidade','LIKE ', 'Porto%'));
+$criteria->add(new TFilter('cidade', 'LIKE ', 'Porto%'));
 
 // define o ordenamento da consulta
 $criteria->setProperty('ORDER', 'nome');
@@ -40,4 +39,3 @@ $sql->setCriteria($criteria);
 echo "<pre>";
 echo $sql->getInstruction();
 echo "<br>\n";
-?>

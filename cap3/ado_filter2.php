@@ -27,4 +27,3 @@ echo "<br>\n<br>\n";
 $filter5 = new TFilter('ativo', '=', true);
 echo $filter5->dump();
 echo "<br>\n<br>\n";
-?>

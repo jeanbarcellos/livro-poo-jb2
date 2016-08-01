@@ -57,15 +57,3 @@ $criteria6->add($criteria6b, TExpression::OR_OPERATOR);
 
 echo $criteria6->dump();
 echo " <br>\n<br>\n";
-
-
-
-
-
-
-
-
-
-
-
-?>

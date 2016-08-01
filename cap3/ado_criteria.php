@@ -124,4 +124,3 @@ echo " <br>\n<br>\n";
 //$criterio6->add($criterio6b, TExpression::OR_OPERATOR);
 //echo $criterio6->dump();
 //echo " <br>\n<br>\n";
-
