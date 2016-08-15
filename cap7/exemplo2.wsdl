@@ -25,11 +25,11 @@
             <soap:operation soapAction='exemplo#getNome'/>
             <input>
                 <soap:body use='encoded' namespace='exemplo'
-                                            encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
             </input>
             <output>
                 <soap:body use='encoded' namespace='exemplo'
-                                            encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+                           encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
             </output>
         </operation>
     </binding>
