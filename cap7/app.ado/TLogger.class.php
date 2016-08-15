@@ -6,7 +6,7 @@
  */
 abstract class TLogger {
 
-    protected $filename;  // local do arquivo de LOG
+    protected $filename; // local do arquivo de LOG
 
     /**
      * método __construct()

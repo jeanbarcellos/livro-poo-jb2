@@ -13,7 +13,6 @@ class TCriteria extends TExpression {
     /**
      * Método construtor
      */
-
     function __construct() {
         $this->expressions = array();
         $this->operators = array();
@@ -71,12 +70,10 @@ class TCriteria extends TExpression {
      * @param $value    = valor
      */
     public function setProperty($property, $value) {
-        $property = strtolower($property);
-
         if (isset($value)) {
-            $this->properties[$property] = $value;
+            $this->properties[strtolower($property)] = $value;
         } else {
-            $this->properties[$property] = NULL;
+            $this->properties[strtolower($property)] = NULL;
         }
     }
 
@@ -92,5 +89,3 @@ class TCriteria extends TExpression {
     }
 
 }
-
-?>

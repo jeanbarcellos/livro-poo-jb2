@@ -28,7 +28,6 @@ final class TTransaction {
         if (empty(self::$conn)) {
             // abre uma conexão e armazena na propriedade estática $conn
             self::$conn = TConnection::open($database);
-
             // inicia a transação
             self::$conn->beginTransaction(); # PDO
         }
@@ -50,7 +49,7 @@ final class TTransaction {
     public static function rollback() {
         if (self::$conn) {
             // desfaz as operações realizadas durante a transação e fecha
-            self::$conn->rollBack(); #P DO
+            self::$conn->rollBack(); #DO
             self::$conn = NULL; # fecha a conexão
         }
     }
@@ -88,5 +87,3 @@ final class TTransaction {
     }
 
 }
-
-?>

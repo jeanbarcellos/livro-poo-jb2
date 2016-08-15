@@ -147,7 +147,7 @@ abstract class TRecord {
 
         // obtém transação ativa
         if ($conn = TTransaction::get()) {
-            // faz o log ...
+            // faz o log
             TTransaction::log($sql->getInstruction());
 
             // e executa o SQL
@@ -183,7 +183,6 @@ abstract class TRecord {
 
         // obtém transação ativa
         if ($conn = TTransaction::get()) {
-
             // cria mensagem de log ...
             TTransaction::log($sql->getInstruction());
 

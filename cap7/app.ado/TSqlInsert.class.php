@@ -16,6 +16,7 @@ final class TSqlInsert extends TSqlInstruction {
      * @param $value = valor a ser armazenado
      */
     public function setRowData($column, $value) {
+        
         // verifica se é o dado escalar (integer, float, string ou boolean)
         if (is_scalar($value)) {
             // verifica se o dado é uma string e se não está fazia
