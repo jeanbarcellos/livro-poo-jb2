@@ -101,6 +101,9 @@ class ProdutosForm extends TPage {
         $row->addCell('');
         $row->addCell($button1);
 
+//        $array1 = array($codigo, $descricao, $estoque, $preco_custo, $preco_venda, $fabricante, $button1);
+//        var_dump($array1);exit;
+        
         // define quais são os campos do formulário
         $this->form->setFields(array($codigo, $descricao, $estoque, $preco_custo, $preco_venda, $fabricante, $button1));
 
@@ -144,7 +147,8 @@ class ProdutosForm extends TPage {
             TTransaction::open('pg_livro');
 
             // lê os dados do formulário e instancia um objeto Produto
-            $produto = $this->form->getData('Produto');
+            $produto = $this->form->getData('Produto');            
+            
             // armazena o objeto no banco de dados
             $produto->store();
 
